@@ -3,7 +3,7 @@
 //----------------------------------------------------
 using namespace std;
 //----------------------------------------------------
-const int TEST_SIZE = 100;
+const int TEST_SIZE = 300;
 const int MIN_V = 5;
 const int MAX_V = 100;
 const int STEP = 5;
@@ -119,7 +119,7 @@ int main() {
     for (int i = 0; i < (MAX_V - MIN_V + STEP) / STEP; i++) {
         data << (i + 1) * STEP << ", ";
 
-        sort(test_durations[i].begin(),     test_durations[i].end());
+        sort(test_durations[i].begin(), test_durations[i].end());
         data << test_durations[i][TEST_SIZE/2] << ", ";
 
         for (int j = 0; j < TEST_SIZE; j++)
